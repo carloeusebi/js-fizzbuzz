@@ -9,7 +9,6 @@ for (let i = 1; i < 101; i++) {
     let elementToPrint = '';
 
     // prepare html code
-    let listElement = '';
     let classes = 'box';
 
     // if i is divisible by 3 add Fizz to elementToPrint
@@ -30,7 +29,7 @@ for (let i = 1; i < 101; i++) {
     console.log(elementToPrint); //print on console
 
     // build html for the element
-    listElement = `<div class="${classes}">${elementToPrint}</div>`;
+    const listElement = `<div class="${classes}">${elementToPrint}</div>`;
 
     // add new html at the end of list
     listOfElements += listElement;
