@@ -22,11 +22,13 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 1. _Grab an element from the DOM_
 1. Generate a number = 1;
 1. **FOR** 100 times, while number < 101  :
-    - **IF** number is divisible by 5;
-        - **IF** number is ALSO divisible by 3:
-            - print FizzBuzz;
-        - **ELSE** (only div by 5) print Buzz;
-    - **ELSE IF** number is divisible by 3 (and ONLY by 3) print FIZZ;
-    - **ELSE** (number in neither div by 5 nor 3) print number
-    - number is incerased by 1;
+    - Prepare a string element to print;
+    - **IF** number is divisible by 3 (number % 3 === 0);
+        - add Fizz to element;
+    - **IF** number is divisible by 5 (number % 5 === 0);
+        - add Buzz to element (if element was _'Fizz'_ now it is _'FizzBuzz'_)
+    - **IF** element is empty (was neither div by 3 nor by 5)
+        - element is number
+    - Print element;
+    - Increase number by 1;
     - _repeat_

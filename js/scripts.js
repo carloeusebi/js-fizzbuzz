@@ -3,25 +3,17 @@ console.log('JSOK');
 // start counting
 for (let i = 1; i < 101; i++) {
 
-    // if i is divisible by 5
-    if (!(i % 5)) {
+    // prepare an element to print
+    let elementToPrint = '';
 
-        if (!(i % 3)) {
+    // if i is divisible by 3 add Fizz to elementToPrint
+    if (!(i % 3)) elementToPrint += 'Fizz';
 
-            // if i is also divisble by 3 print FizzBuzz
-            console.log('FizzBuzz');
-        } else {
+    // if i is divisible by 5 add Buzz to elementToPrint
+    if (!(i % 5)) elementToPrint += 'Buzz';
 
-            // else means it is ONLY divisible by 5
-            console.log('Buzz');
-        }
-    } else if (!(i % 3)) {
+    // if i is neither divisble by 3 nor 5 elementToPrint is empty => we can print i
+    if (!elementToPrint) elementToPrint = i;
 
-        // else if it is ONLY divisble by 3
-        console.log('Fizz');
-    } else {
-
-        // else if it neither divisble by 5 nor 3
-        console.log(i);
-    }
+    console.log(elementToPrint);
 }
