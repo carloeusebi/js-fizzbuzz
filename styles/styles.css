@@ -1,0 +1,25 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+
+    background-color: #1389b2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.box.fizz {
+    background-color: yellow;
+}
+
+.box.buzz {
+    background-color: aquamarine;
+}
+
+.box.fizz.buzz {
+    background-color: salmon;
+}
